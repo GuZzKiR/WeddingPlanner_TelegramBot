@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: weddingplannerbot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: "8112995444:AAGmN_LmGSE1Ld-hT1DH-t9chUVufy4iFI8"
+      - key: WEB_APP_URL
+        value: "https://weddingplannerpro.netlify.app"
