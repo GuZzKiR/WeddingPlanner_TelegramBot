@@ -18,4 +18,4 @@ async def send_welcome(message: types.Message):
     await message.answer("Привет! 👋 Нажми кнопку ниже, чтобы открыть планировщик свадьбы:", reply_markup=keyboard)
 
 if __name__ == '__main__':
-    executor.start_polling(dp)
+    executor.start_polling(dp, skip_updates=True)
